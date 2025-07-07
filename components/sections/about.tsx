@@ -11,10 +11,10 @@ export function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const stats = [
-    { label: "Years Experience", value: "5+" },
-    { label: "Projects Completed", value: "50+" },
-    { label: "Happy Clients", value: "30+" },
-    { label: "Technologies", value: "20+" },
+    { label: "Years Experience", value: "3+" },
+    { label: "Projects Completed", value: "20+" },
+    { label: "Happy Clients", value: "10+" },
+    { label: "Technologies", value: "10+" },
   ]
 
   return (
@@ -40,13 +40,12 @@ export function About() {
             className="space-y-6"
           >
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience in creating digital solutions that
+              I'm a passionate full-stack developer with over 3+ years of experience in creating digital solutions that
               make a difference. My journey in tech started with a curiosity about how things work, and it has evolved
               into a career dedicated to building exceptional user experiences.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or
-              sharing knowledge with the developer community. I believe in continuous learning and staying up-to-date
+              When I'm not coding, you can find me exploring new technologies, or you find me singing. I believe in continuous learning and staying up-to-date
               with the latest industry trends.
             </p>
             <div className="flex flex-wrap gap-2">
