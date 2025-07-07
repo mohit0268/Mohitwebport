@@ -1,9 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, ArrowRight, Github, Linkedin, Mail, Target } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState } from "react"
+import Link from 'next/link';
 
 export function Hero() {
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 })
@@ -90,11 +91,15 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Button size="lg" className="group">
-              View My Work
-              <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+              <Link href='https://calendly.com/mohitpurohit020/30min' target="blank" className="flex justify-center">
+              Let's Connect
+              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="hover:bg-white hover:text-black">
+              <Link href="https://drive.google.com/file/d/1e5tvHDq2SgPySJN-rFSPbfAUHzcuAF6d/view?usp=drive_link" target="blank">
               Download Resume
+              </Link>
             </Button>
           </motion.div>
 
@@ -105,13 +110,14 @@ export function Hero() {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" },
+              { icon: Github, href: "https://github.com/mohit0268", label: "GitHub"  },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/mohitpurohit26/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:mohitpurohit020@gmail.com", label: "Email"},
             ].map((social, index) => (
               <motion.a
                 key={social.label}
                 href={social.href}
+                target="blank"
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="p-3 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
