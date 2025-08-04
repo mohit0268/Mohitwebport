@@ -22,19 +22,12 @@ export function Projects() {
       liveUrl: "#",
       githubUrl: "#",
     },
+    
     {
-      title: "Task Management App",
-      description: "Collaborative task management tool with real-time updates and team collaboration features.",
+      title: "Dev Bumble",
+      description: "A developer matchmaking platform where users swipe to discover and connect with like-minded devs.",
       image: "/placeholder.svg?height=300&width=500",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Beautiful weather dashboard with location-based forecasts and interactive charts.",
-      image: "/placeholder.svg?height=300&width=500",
-      technologies: ["Vue.js", "Chart.js", "Weather API", "Tailwind"],
+      technologies: ["reactjs", "nodejs", "Tailwind", "authentication"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -57,7 +50,7 @@ export function Projects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             A showcase of my recent work and personal projects
           </p>

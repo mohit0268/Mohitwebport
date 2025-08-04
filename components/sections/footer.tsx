@@ -53,9 +53,9 @@ export function Footer() {
             <h4 className="font-semibold">Connect</h4>
             <div className="flex space-x-4">
               {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                { icon: Mail, href: "#", label: "Email" },
+                { icon: Github, href: "https://github.com/mohit0268", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/mohitpurohit26/", label: "LinkedIn" },
+                { icon: Mail, href: "mailto:mohitpurohit020@gmail.com", label: "Email" },
               ].map((social) => (
                 <motion.a
                   key={social.label}
@@ -64,6 +64,7 @@ export function Footer() {
                   whileTap={{ scale: 0.95 }}
                   className="p-2 rounded-full bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
                   aria-label={social.label}
+                  target="blank"
                 >
                   <social.icon className="h-5 w-5" />
                 </motion.a>

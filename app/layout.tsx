@@ -7,10 +7,44 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mohit Purohit - Portfolio",
+  title: {
+    default: "Mohit Purohit - Portfolio",
+    template: "%s | Mohit Purohit",
+  },
   description:
     "Full Stack Developer & UI/UX Designer passionate about creating beautiful, functional, and user-centered digital experiences.",
-    generator: 'v0.dev'
+  keywords: [
+    "Mohit Purohit",
+    "Full Stack Developer",
+    "UI/UX Designer",
+    "React Developer",
+    "Next.js Developer",
+    "Web Developer",
+    "Portfolio",
+  ],
+  authors: [{ name: "Mohit Purohit" }],
+  creator: "Mohit Purohit",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://mohitpurohit-portfolio.vercel.app",
+    title: "Mohit Purohit - Portfolio",
+    description:
+      "Full Stack Developer & UI/UX Designer passionate about creating beautiful, functional, and user-centered digital experiences.",
+    siteName: "Mohit Purohit Portfolio",
+  },
+  
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 }
 
 export default function RootLayout({
